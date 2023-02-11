@@ -6,7 +6,7 @@ import { faWind ,faDropletSlash,faDroplet,faDownLeftAndUpRightToCenter,faSun,faE
 function Main() {
  const [data,setData] = useState('');
  const [today,setToday] = useState('');
- let url = 'http://api.weatherapi.com/v1/forecast.json?key=f07a9c924a204b2cba1113545232801&q=auto:ip&aqi=yes&days=5'
+ let url = 'https://api.weatherapi.com/v1/forecast.json?key=f07a9c924a204b2cba1113545232801&q=auto:ip&aqi=yes&days=5'
  async function fetchData  (url){
   try{
     let response = await fetch(url);
